@@ -11,7 +11,7 @@ void dijkstra(int n, int S, vector<vector<Edge>> E, vector<long long> &D, vector
     D[S] = 0;
     
     for (int i = 0; i < n; i++) {
-        int uBest; // tìm đỉnh u chưa dùng, có khoảng cách nhỏ nhất
+        int uBest; // tìm đỉnh u chưa dùng, có khoảng cách nhỏ nhất :)
         long long Max = INF;
         for (int u = 0; u < n; u++) {
             if(D[u] < Max && P[u] == false) {
